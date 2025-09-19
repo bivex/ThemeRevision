@@ -71,7 +71,7 @@
 #task-view .sidebar-content #task-summary {
   margin-bottom: 16px;
   max-width: unset;
-  /* Background will be set by Trianglify.js */
+  /* Background will be set by JavaScript */
   background-color: var(--color-greyscale-4);
   position: relative;
   overflow: hidden;

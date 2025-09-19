@@ -14,6 +14,29 @@
   --style-shadow-light: 0 1px 2px 0 var(--color-shadow-lit);
   --style-shadow-heavy: 0 3px 8px 0 var(--color-shadow-hev);
 
+  --pattern-dots-def: radial-gradient(
+    var(--color-greyscale-2) 0.8px,
+    transparent 0.8px
+  );
+  --pattern-dots-ph: radial-gradient(
+    var(--color-greyscale-2) 0.8px,
+    var(--color-greyscale-5) 0.8px
+  );
+  --pattern-dots-size: 16px 16px;
+
+  /* Optimized premium gradient patterns */
+  --pattern-stunning-def: 
+    radial-gradient(circle at 20% 20%, rgba(138, 43, 226, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 80% 80%, rgba(255, 20, 147, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 40% 60%, rgba(0, 191, 255, 0.06) 0%, transparent 60%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, transparent 50%, rgba(255, 255, 255, 0.04) 100%);
+  --pattern-stunning-ph: 
+    radial-gradient(circle at 20% 20%, rgba(138, 43, 226, 0.12) 0%, transparent 60%),
+    radial-gradient(circle at 80% 80%, rgba(255, 20, 147, 0.12) 0%, transparent 60%),
+    radial-gradient(circle at 40% 60%, rgba(0, 191, 255, 0.1) 0%, transparent 60%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, transparent 50%, rgba(255, 255, 255, 0.06) 100%);
+  --pattern-stunning-size: 200px 200px;
+
   /*default css override*/
   --color-dark: var(--color-greyscale-1);
   --color-primary: var(--color-greyscale-1);

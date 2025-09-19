@@ -1,7 +1,7 @@
 .board-task-list {
   min-height: 500px;
   border-radius: var(--size-radius-def);
-  /* Background will be set by Trianglify.js */
+  /* Background will be handled by JavaScript for animation */
   background-color: var(--color-greyscale-4);
   border-left: var(--style-border);
   box-shadow: inset -64px 0 0 0 var(--color-greyscale-4);
@@ -33,7 +33,7 @@
 }
 .draggable-placeholder {
   border: 24px solid var(--color-greyscale-5);
-  /* Background will be set by Trianglify.js */
+  /* Background will be set by JavaScript */
   background-color: var(--color-greyscale-5);
   margin-bottom: 12px;
   position: relative;
