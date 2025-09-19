@@ -9,17 +9,17 @@
 	padding: .5rem .75rem;
 }
 #board th.board-column-header{
-	line-height: 1.2;
+	line-height: 1.4 !important;
 	padding-bottom: 0.25rem;
 }
 
 /* Improve line-height for board elements */
 #board .board-column-header-task-count {
-	line-height: 1.4;
+	line-height: 1.4 !important;
 }
 
 #board .board-column-title {
-	line-height: 1.4;
+	line-height: 1.4 !important;
 }
 
 #board .board-add-icon {
@@ -161,7 +161,7 @@
 .board-add-icon {
 	margin: 0 1rem 0 0;
 	padding: 0;
-	line-height: 1rem;
+	line-height: 1.4; /* Changed from 1rem */
 }
 .board-add-icon .fa-plus:hover {
 	text-decoration: none;
@@ -177,8 +177,8 @@ table th .board-add-icon:hover .fa-plus:before {
 	display: block;
 	width: 1.5rem;
 	height: 1.5rem;
-	font-size: 0.5em;
-	line-height: 1.5rem;
+	font-size: 1rem; /* Changed from 0.5em */
+	line-height: 1.4; /* Changed from 1.5rem */
 	border-radius: var(--size-radius-def);
 }
 table th:first-child .board-add-icon .fa-plus:before {

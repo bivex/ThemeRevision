@@ -131,7 +131,7 @@ body.TR .select-dropdown-input {
 /* Improve line-height for better readability */
 body.TR strong,
 body.TR b {
-	line-height: 1.4;
+	line-height: 1.4 !important;
 }
 
 body.TR small {
@@ -139,7 +139,7 @@ body.TR small {
 }
 
 body.TR .tooltip {
-	line-height: 1.4;
+	line-height: 1.4 !important;
 }
 
 body.TR .notification {

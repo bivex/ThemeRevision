@@ -4,7 +4,7 @@ input[type=date], input[type=email], input[type=number], input[type=password], i
 	background: var(--color-greyscale-6);
     border-bottom: var(--style-border);
 	border-radius: var(--size-radius-def);
-	line-height: calc(1rem + 2px);
+	line-height: calc(1rem + 2px) !important;
 	width: auto;
 	height: auto;
 	margin: 0 0 1rem;
@@ -12,7 +12,7 @@ input[type=date], input[type=email], input[type=number], input[type=password], i
 	color: var(--color-greyscale-1);
 	padding: .75rem;
 	box-shadow: var(--style-shadow-light);
-	font-family: var(--style-fontfamily);
+	font-family: var(--style-fontfamily) !important;
 	letter-spacing: var(--style-letterspacing);
 	box-sizing: border-box;
 }
