@@ -39,7 +39,8 @@ header {
   height: 40px;
 }
 #board-container {
-  background: var(--color-greyscale-4);
+  background-image: var(--pattern-dots-def);
+  background-size: var(--pattern-dots-size);
   overflow-x: auto;
   max-width: 100%;
   width: 100%;
@@ -93,8 +94,7 @@ header {
   /*border-bottom: var(--style-border);*/
   padding: 16px 0;
   margin: 0 0 8px;
-  background-image: var(--pattern-dots-def);
-  background-size: var(--pattern-dots-size);
+  background: none; /* Removed from here as it will be on a higher level */
   text-shadow: 0 0 1em var(--color-greyscale-6);
 }
 .sidebar-content > h3 {

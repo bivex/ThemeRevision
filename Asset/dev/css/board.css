@@ -5,7 +5,7 @@
 #board th {
   border: none;
   /*border-left: 1px solid var(--color-greyscale-4);*/
-  background: var(--color-greyscale-4);
+  background: transparent;
   padding: 8px 12px;
 }
 #board th.board-column-header {

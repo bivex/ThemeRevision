@@ -2,8 +2,6 @@
   min-height: 500px;
   /*background: linear-gradient(180deg, var(--color-greyscale-3), transparent 10%);*/
   border-radius: var(--size-radius-def);
-  background-image: var(--pattern-dots-def);
-  background-size: var(--pattern-dots-size);
   border-left: var(--style-border);
   box-shadow: inset -64px 0 0 0 var(--color-greyscale-4);
 }
@@ -31,9 +29,7 @@
   color: var(--color-greyscale-1);
 }
 .draggable-placeholder {
-  border: 24px solid var(--color-greyscale-5);
-  background-image: var(--pattern-dots-ph);
-  background-size: var(--pattern-dots-size);
+  border: 24px solid transparent;
   margin-bottom: 12px;
 }
 
