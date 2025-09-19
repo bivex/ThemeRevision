@@ -131,71 +131,30 @@ body.TR .notification {
 
 /* Fix specific elements with small line-height */
 body.TR .js-modal-medium,
-body.TR .js-modal-large {
-	line-height: 1.4;
-}
-
-body.TR .view-overview {
-	line-height: 1.4;
-}
-
-body.TR .dropdown-menu {
-	line-height: 1.4;
-}
-
-body.TR .dropdown-menu-link-icon {
-	line-height: 1.4;
-}
-
-body.TR .task-board-header {
-	line-height: 1.4;
-}
-
-body.TR .board-column-title {
-	line-height: 1.4;
-}
-
-body.TR .board-column-header-task-count {
-	line-height: 1.4;
-}
-
-body.TR .board-add-icon {
-	line-height: 1.4;
-}
-
-body.TR .task-tag {
-	line-height: 1.4;
-}
-
-body.TR .task-icon-age {
-	line-height: 1.4;
-}
-
-/* Fix elements with very small line-height values */
+body.TR .js-modal-large,
+body.TR .view-overview,
+body.TR .dropdown-menu,
+body.TR .dropdown-menu-link-icon,
+body.TR .task-board-header,
+body.TR .board-column-title,
+body.TR .board-column-header-task-count,
+body.TR .board-add-icon,
+body.TR .task-tag,
+body.TR .task-icon-age,
 body.TR .fa,
-body.TR i.fa {
-	line-height: 1.4;
+body.TR i.fa,
+body.TR .avatar-letter,
+body.TR .views,
+body.TR .dropdown,
+body.TR .task-board-icons,
+body.TR .task-board-icons .task-icon-age,
+body.TR input,
+body.TR .input-addon-field,
+body.TR .select-dropdown-input,
+body.TR button.selector-clear-btn {
+	line-height: 1.4 !important;
 }
 
-body.TR .avatar-letter {
-	line-height: 1.4;
-}
-
-body.TR .views {
-	line-height: 1.4;
-}
-
-body.TR .dropdown {
-	line-height: 1.4;
-}
-
-body.TR .task-board-icons {
-	line-height: 1.4;
-}
-
-body.TR .task-board-icons .task-icon-age {
-	line-height: 1.4;
-}
 body.TR a {
 	font-size: 1rem;
 	line-height: 1.4;
