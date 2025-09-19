@@ -9,7 +9,7 @@
 	padding: .5rem .75rem;
 }
 #board th.board-column-header{
-	line-height: 0;
+	line-height: 1.2;
 	padding-bottom: 0.25rem;
 }
 #board td:first-child,

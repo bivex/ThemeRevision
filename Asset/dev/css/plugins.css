@@ -206,7 +206,7 @@
 /* Group_Assign */
 .TR .task-board-expanded > span {
 	float: left;
-	font-size: 0;
+	font-size: 0.875rem;
 }
 .TR .assigned-group-label {
 	display: none;

@@ -137,7 +137,7 @@ body.TR .task-board-header > .dropdown * {
 
 /* title */
 body.TR .task-board-title, body.TR .table-list-title {
-	line-height: 0;
+	line-height: 1.2;
 	margin: 0 0 6px;
 	clear: both;
 	/*display: block;*/
@@ -223,9 +223,9 @@ body.TR .task-board-category span.tooltip i.fa, body.TR .table-list-category spa
 }
 .task-board-icons, .task-list-icons {
 	clear: both;
-	font-size: 0;
+	font-size: 0.875rem;
 	text-align: left;
-    line-height: 0;
+    line-height: 1.2;
     margin-top: calc(1rem - 9px);
 	display: inline-block;
 	width: 100%;
@@ -233,9 +233,9 @@ body.TR .task-board-category span.tooltip i.fa, body.TR .table-list-category spa
 	transition-timing-function: ease-in-out;
 }
 .task-board-icons .task-board-icons-row {
-	line-height: 0;
+	line-height: 1.2;
 	display: contents;
-	font-size: 0;
+	font-size: 0.875rem;
 }
 .task-board-icons .task-board-icons-row br {
 	display: none;
@@ -266,7 +266,7 @@ body.TR .task-board-category span.tooltip i.fa, body.TR .table-list-category spa
 }
 .task-board-icons .task-board-icons-row .task-icon-age,
 .task-list-icons .task-icon-age{
-	font-size: 0;
+	font-size: 0.75rem;
 	height: calc(1rem + 6px);
 }
 .task-board-icons .task-board-icons-row .task-icon-age .task-icon-age-total,

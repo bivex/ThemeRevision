@@ -383,7 +383,7 @@ label {
 	margin-top: -0.5rem;
 }
 .form-errors li::marker{
-	font-size: 0;
+	font-size: 0.75rem;
 }
 .form-inline {
 	height: auto;
