@@ -2,278 +2,283 @@
 
 /* Исправления для планшетов */
 @media (max-width: 1024px) and (min-width: 769px) {
-    #board-container {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-    
-    #board {
-        min-width: 100%;
-        table-layout: auto;
-    }
-    
-    #board td, #board th {
-        min-width: 200px;
-        max-width: 300px;
-    }
+  #board-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #board {
+    min-width: 100%;
+    table-layout: auto;
+  }
+
+  #board td,
+  #board th {
+    min-width: 200px;
+    max-width: 300px;
+  }
 }
 
 /* Основные исправления для мобильных устройств */
 @media (max-width: 768px) {
-    /* Предотвращение горизонтального растягивания */
-    body {
-        overflow-x: hidden;
-        max-width: 100vw;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    
-    /* Исправление для основного контейнера */
-    .page {
-        max-width: 100vw;
-        width: 100%;
-        overflow-x: hidden;
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-    }
-    
-    /* Исправление для главного контента */
-    #main {
-        max-width: 100vw;
-        width: 100%;
-        overflow-x: hidden;
-        box-sizing: border-box;
-    }
-    
-    /* Исправление для board-container */
-    #board-container {
-        max-width: 100vw;
-        width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        box-sizing: border-box;
-    }
-    
-    /* Исправление для доски */
-    #board {
-        width: 100%;
-        max-width: 100%;
-        table-layout: fixed;
-        box-sizing: border-box;
-    }
-    
-    /* Исправление для колонок доски */
-    #board td, #board th {
-        max-width: 50%;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        box-sizing: border-box;
-    }
-    
-    /* Исправление для задач на доске */
-    .task-board {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-    }
-    
-    /* Исправление для sidebar-container */
-    .sidebar-container {
-        max-width: 100vw;
-        width: 100%;
-        overflow-x: hidden;
-        box-sizing: border-box;
-    }
-    
-    /* Исправление для sidebar-content */
-    .sidebar-content {
-        max-width: 100%;
-        width: 100%;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        box-sizing: border-box;
-    }
-    
-    /* Исправление для таблиц */
-    table {
-        max-width: 100%;
-        width: 100%;
-        table-layout: fixed;
-        box-sizing: border-box;
-    }
-    
-    /* Исправление для форм */
-    form {
-        max-width: 100%;
-        width: 100%;
-        overflow-x: hidden;
-        box-sizing: border-box;
-    }
-    
-    /* Исправление для модальных окон */
-    #modal-box {
-        max-width: 100vw;
-        width: 100vw;
-        overflow-x: hidden;
-        box-sizing: border-box;
-    }
-    
-    #modal-content {
-        max-width: 100%;
-        width: 100%;
-        overflow-x: hidden;
-        box-sizing: border-box;
-    }
-    
-    /* Исправление для всех элементов с шириной */
-    * {
-        box-sizing: border-box;
-    }
-    
-    /* Исправление для элементов с фиксированной шириной */
-    .panel, .table-list, .accordion-content {
-        max-width: 100%;
-        width: 100%;
-        box-sizing: border-box;
-    }
+  /* Предотвращение горизонтального растягивания */
+  body {
+    overflow-x: hidden;
+    max-width: 100vw;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Исправление для основного контейнера */
+  .page {
+    max-width: 100vw;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Исправление для главного контента */
+  #main {
+    max-width: 100vw;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  /* Исправление для board-container */
+  #board-container {
+    max-width: 100vw;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+  }
+
+  /* Исправление для доски */
+  #board {
+    width: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+    box-sizing: border-box;
+  }
+
+  /* Исправление для колонок доски */
+  #board td,
+  #board th {
+    max-width: 50%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+  }
+
+  /* Исправление для задач на доске */
+  .task-board {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Исправление для sidebar-container */
+  .sidebar-container {
+    max-width: 100vw;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  /* Исправление для sidebar-content */
+  .sidebar-content {
+    max-width: 100%;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+  }
+
+  /* Исправление для таблиц */
+  table {
+    max-width: 100%;
+    width: 100%;
+    table-layout: fixed;
+    box-sizing: border-box;
+  }
+
+  /* Исправление для форм */
+  form {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  /* Исправление для модальных окон */
+  #modal-box {
+    max-width: 100vw;
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  #modal-content {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  /* Исправление для всех элементов с шириной */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Исправление для элементов с фиксированной шириной */
+  .panel,
+  .table-list,
+  .accordion-content {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 /* Дополнительные исправления для очень маленьких экранов */
 @media (max-width: 480px) {
-    /* Еще более строгие ограничения для маленьких экранов */
-    body {
-        padding: 0.5rem;
-        width: 100vw;
-        max-width: 100vw;
-        overflow-x: hidden;
-    }
-    
-    .page {
-        padding: 0;
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-    }
-    
-    .sidebar-content {
-        padding: 1rem;
-        width: 100%;
-        max-width: 100%;
-    }
-    
-    /* Исправление для заголовков */
-    header h1 {
-        font-size: 1.2rem !important;
-    }
-    
-    /* Исправление для кнопок */
-    .btn {
-        min-width: auto;
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-    
-    /* Исправление для input полей */
-    input[type="text"], 
-    input[type="email"], 
-    input[type="password"], 
-    textarea, 
-    select {
-        max-width: 100%;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    
-    /* Дополнительные исправления ширины */
-    .project-header {
-        width: 100%;
-        max-width: 100%;
-    }
-    
-    .board-task-list {
-        width: 100%;
-        max-width: 100%;
-    }
-    
-    .task-board {
-        width: 100%;
-        max-width: 100%;
-    }
-    
-    /* Специальные исправления для доски на маленьких экранах */
-    #board {
-        width: 100vw;
-        max-width: 100vw;
-        table-layout: auto;
-    }
-    
-    #board td, #board th {
-        max-width: 50vw;
-        width: 50vw;
-        min-width: 150px;
-    }
-    
-    /* Горизонтальная прокрутка для доски */
-    #board-container {
-        overflow-x: scroll;
-        -webkit-overflow-scrolling: touch;
-        white-space: nowrap;
-    }
-    
-    #board {
-        white-space: normal;
-        display: table;
-        min-width: 100%;
-    }
+  /* Еще более строгие ограничения для маленьких экранов */
+  body {
+    padding: 0.5rem;
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .page {
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .sidebar-content {
+    padding: 1rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Исправление для заголовков */
+  header h1 {
+    font-size: 1.2rem !important;
+  }
+
+  /* Исправление для кнопок */
+  .btn {
+    min-width: auto;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Исправление для input полей */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea,
+  select {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Дополнительные исправления ширины */
+  .project-header {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .board-task-list {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .task-board {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Специальные исправления для доски на маленьких экранах */
+  #board {
+    width: 100vw;
+    max-width: 100vw;
+    table-layout: auto;
+  }
+
+  #board td,
+  #board th {
+    max-width: 50vw;
+    width: 50vw;
+    min-width: 150px;
+  }
+
+  /* Горизонтальная прокрутка для доски */
+  #board-container {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+
+  #board {
+    white-space: normal;
+    display: table;
+    min-width: 100%;
+  }
 }
 
 /* Исправления для предотвращения растягивания контента */
 @media (max-width: 768px) {
-    /* Убираем фиксированные ширины */
-    .task-form-main-column {
-        min-width: auto;
-        max-width: 100%;
-    }
-    
-    .task-form-secondary-column {
-        min-width: auto;
-        max-width: 100%;
-    }
-    
-    /* Исправление для таблиц */
-    .table-list {
-        max-width: 100%;
-        overflow-x: auto;
-    }
-    
-    .table-list-row {
-        max-width: 100%;
-        word-wrap: break-word;
-    }
-    
-    /* Исправление для board */
-    #board {
-        max-width: 100%;
-        overflow-x: auto;
-    }
-    
-    /* Исправление для task-board */
-    .task-board {
-        max-width: 100%;
-        word-wrap: break-word;
-    }
-    
-    /* Исправление для accordion */
-    .accordion-section {
-        max-width: 100%;
-    }
-    
-    .accordion-content {
-        max-width: 100%;
-        word-wrap: break-word;
-    }
+  /* Убираем фиксированные ширины */
+  .task-form-main-column {
+    min-width: auto;
+    max-width: 100%;
+  }
+
+  .task-form-secondary-column {
+    min-width: auto;
+    max-width: 100%;
+  }
+
+  /* Исправление для таблиц */
+  .table-list {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .table-list-row {
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+
+  /* Исправление для board */
+  #board {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  /* Исправление для task-board */
+  .task-board {
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+
+  /* Исправление для accordion */
+  .accordion-section {
+    max-width: 100%;
+  }
+
+  .accordion-content {
+    max-width: 100%;
+    word-wrap: break-word;
+  }
 }
