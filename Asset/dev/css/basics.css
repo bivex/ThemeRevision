@@ -1,6 +1,6 @@
 :root {
-  --size-font-def: 13px;
-  --size-font-min: max(12px, 0.875rem);
+  --size-font-def: 12px;
+  --size-font-min: max(12px, 14px);
   --size-width-def: 100%;
   --size-width-comp: 220px;
   --size-radius-def: 4px;
@@ -87,17 +87,20 @@
   --button-disabled-background-color: var(--color-greyscale-3);
   --button-disabled-border-color: var(--color-greyscale-3);
 }
-html,
-body {
-  font-size: var(--size-font-def);
+html {
+  color-scheme: light;
 }
 body {
   background-color: var(--color-greyscale-4);
-  padding: 0.5rem 2rem;
+  padding: 8px 32px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: var(--style-fontfamily);
   letter-spacing: var(--style-letterspacing);
+  font-family: "Times New Roman";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
 }
 
 body.TR {
@@ -181,7 +184,6 @@ body.TR button.selector-clear-btn {
 }
 
 body.TR a {
-  font-size: 1rem;
   line-height: 1.4;
   font-weight: normal;
   opacity: 1;
@@ -194,15 +196,13 @@ body.TR a > *:hover {
 }
 li {
   padding: 0;
-  margin: 0 0 1rem 1rem;
+  margin: 0 0 16px 16px;
   line-height: 1.4;
-  font-size: 1rem;
   list-style-type: inherit;
 }
 p {
   margin-bottom: 1em;
   line-height: 1.5em;
-  font-size: 1rem;
   color: var(--color-greyscale-1);
 }
 hr {
@@ -216,12 +216,12 @@ small {
 button,
 .btn {
   line-height: 1.4;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  padding: 0.75rem;
+  font-size: 16px;
+  margin-bottom: 16px;
+  padding: 12px;
   border-radius: var(--size-radius-def);
-  margin-top: 1rem;
-  min-width: 6rem;
+  margin-top: 16px;
+  min-width: 96px;
   text-align: center;
   box-shadow: var(--style-shadow-light);
   font-weight: bold !important;
@@ -247,38 +247,38 @@ h3 a,
 }
 h1,
 h1 a {
-  font-size: 2rem !important;
+  font-size: 20px !important;
   line-height: 1.2 !important;
 }
 h2,
 h2 a,
 .accordion-title {
-  font-size: 1.3rem !important;
+  font-size: 20.8px !important;
 }
 h3,
 h3 a {
-  font-size: 1rem !important;
+  font-size: 16px !important;
 }
 article {
-  line-height: 1.5rem;
+  line-height: 24px;
   word-break: break-word;
 }
 body.TR i.fa {
-  line-height: 1rem;
-  width: 1rem;
+  line-height: 16px;
+  width: 16px;
   padding: 0;
   margin: 0;
-  margin-right: 0.5rem;
+  margin-right: 8px;
   color: var(--color-greyscale-1);
 }
 body.TR a:hover i.fa {
   color: var(--link-color-hover);
 }
 .TR .avatar.avatar-left {
-  margin-right: 0.5rem;
+  margin-right: 8px;
 }
 .TR .avatar.avatar-inline {
-  margin: 0 0.5rem 0 0;
+  margin: 0 8px 0 0;
   vertical-align: middle;
 }
 .TR .avatar .avatar-letter,
@@ -292,47 +292,47 @@ body.TR a:hover i.fa {
 }
 .TR .avatar.avatar-13 .avatar-letter {
   font-size: var(--size-font-min);
-  line-height: 1rem;
-  width: 1rem;
+  line-height: 16px;
+  width: 16px;
   padding: 1px;
 }
 .TR .avatar.avatar-13 img {
-  width: calc(1rem + 2px);
+  width: 18px;
   height: auto;
   display: block;
 }
 .TR .avatar.avatar-20 .avatar-letter {
-  font-size: 1rem;
-  line-height: 1.538rem;
-  width: 1.538rem;
+  font-size: 16px;
+  line-height: 24.608px;
+  width: 24.608px;
 }
 .TR .avatar.avatar-20 img {
-  width: 1.538rem;
+  width: 24.608px;
   height: auto;
   display: block;
 }
 .TR .avatar.avatar-48 .avatar-letter {
-  font-size: 1.5rem;
-  line-height: 3.692rem;
-  width: 3.692rem;
+  font-size: 24px;
+  line-height: 59.072px;
+  width: 59.072px;
   font-weight: bold;
 }
 .TR #user-section .sidebar-content > .avatar-48,
 #user-section .sidebar-content > .avatar-48 {
-  padding: 1rem;
+  padding: 16px;
 }
 .alert {
-  margin: 1rem 0;
+  margin: 16px 0;
   border-radius: var(--size-radius-def);
-  padding: 0.5rem 1rem;
-  max-width: calc(var(--size-width-def) - 2rem);
+  padding: 8px 16px;
+  max-width: calc(var(--size-width-def) - 32px);
   border: 0;
 }
 #tooltip-container {
   width: unset;
   min-width: 0;
   overflow-wrap: break-word;
-  padding: 1rem;
+  padding: 16px;
   background: var(--color-greyscale-6);
   border: var(--style-border);
   border-radius: var(--size-radius-def);
@@ -349,7 +349,7 @@ body.TR a:hover i.fa {
   overflow: auto;
 }
 .margin-bottom {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 .margin-bottom > form,
 .filter-box > form {
@@ -360,7 +360,7 @@ body.TR a:hover i.fa {
 }
 .pagination {
   font-size: var(--size-font-min);
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 .pagination-showing {
   margin-right: 0.5em;
@@ -371,4 +371,83 @@ body.TR a:hover i.fa {
 .pagination-next {
   margin-right: 0.5em;
   color: var(--color-greyscale-2);
+}
+
+/* New style for fa-plus icons */
+body.TR i.fa.fa-plus.fa-fw.js-modal-large {
+  font-size: 18px !important;
+}
+
+body.TR header,
+body.TR div.title-container,
+body.TR div.board-selector-wrapper,
+body.TR div.selector-icon,
+body.TR div.selector-content,
+body.TR div.js-select-dropdown-autocomplete-rendered,
+body.TR div.select-dropdown-input-container,
+body.TR div.selector-actions,
+body.TR div.menus-container,
+body.TR span.notification,
+body.TR div.dropdown.header-creation-menu,
+body.TR div.dropdown,
+body.TR section.page,
+body.TR #main,
+body.TR div.project-header,
+body.TR div.dropdown-component,
+body.TR div.views-switcher-component,
+body.TR div.filter-box-component,
+body.TR div.filter-box,
+body.TR #board-container,
+body.TR a,
+body.TR img,
+body.TR span.tooltip,
+body.TR a.js-modal-large,
+body.TR input.select-dropdown-input,
+body.TR a.js-modal-medium,
+body.TR a.dropdown-menu.dropdown-menu-link-icon,
+body.TR div.avatar.avatar-20.avatar-inline,
+body.TR div.avatar-letter,
+body.TR a.dropdown-menu.action-menu,
+body.TR ul.views,
+body.TR li,
+body.TR a.view-overview,
+body.TR li.active,
+body.TR a.view-board,
+body.TR a.view-listing,
+body.TR a.view-calendar,
+body.TR a.view-gantt,
+body.TR form.search,
+body.TR div.input-addon,
+body.TR #form-search,
+body.TR div.input-addon-item,
+body.TR a.dropdown-menu,
+body.TR #board,
+body.TR tbody,
+body.TR tr.board-swimlane-columns-48,
+body.TR span.board-column-title,
+body.TR span.dropdown,
+body.TR tr.board-swimlane.board-swimlane-tasks-48,
+body.TR td.board-column-74,
+body.TR div.board-task-list.board-column-expanded.sortable-column.ui-sortable,
+body.TR div.task-board.draggable-item.task-board-status-open.color-blue.ui-sortable-handle,
+body.TR div.task-board-expanded,
+body.TR div.task-board-header,
+body.TR div.task-board-title,
+body.TR div.task-board-icons,
+body.TR div.task-board.draggable-item.task-board-status-open.color-yellow.ui-sortable-handle,
+body.TR td.board-column-75,
+body.TR div.task-board.draggable-item.task-board-status-open.color-green.ui-sortable-handle,
+body.TR td.board-column-76,
+body.TR div.task-board.draggable-item.task-board-status-open.color-red.ui-sortable-handle,
+body.TR td.board-column-77,
+body.TR th.board-column-header.board-column-header-74,
+body.TR div.board-column-expanded.board-column-expanded-header,
+body.TR div.board-add-icon,
+body.TR th.board-column-header.board-column-header-75,
+body.TR th.board-column-header.board-column-header-76,
+body.TR th.board-column-header.board-column-header-77,
+body.TR i.fa,
+body.TR i.fa.fa-exchange-alt,
+body.TR i.fa.fa-chevron-down.select-dropdown-chevron {
+  font-size: 12px !important;
 }

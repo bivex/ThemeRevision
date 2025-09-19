@@ -7,32 +7,32 @@ header .title-container span.title {
   white-space: nowrap;
 }
 header h1 {
-  height: 3rem;
+  height: 48px;
   display: flex;
   align-items: flex-end;
-  font-size: 1.5rem !important;
+  font-size: 20px !important;
 }
 header h1 .logo {
   line-height: 1.4 !important;
-  width: 3rem;
+  width: 48px;
 }
 header h1 .logo span.logo {
   line-height: 1.4 !important;
 }
 header h1 .logo a {
-  font-size: 1rem !important;
+  font-size: 12px !important;
   line-height: 1.4 !important;
 }
 header h1 .logo a img {
-  height: 2rem;
+  height: 32px;
   border-radius: var(--size-radius-def);
   border-bottom: var(--style-border);
   box-shadow: var(--style-shadow-light);
 }
 header h1 .tooltip {
-  font-size: 1rem;
-  line-height: 2rem;
-  padding-left: 0.5rem;
+  font-size: 12px;
+  line-height: 32px;
+  padding-left: 8px;
   opacity: 1;
 }
 header h1 .tooltip i.fa {
@@ -41,18 +41,18 @@ header h1 .tooltip i.fa {
 header .board-selector-container {
   display: contents;
   width: 100%;
-  padding-top: 1rem;
+  padding-top: 16px;
 }
 header .menus-container {
   align-items: flex-end;
-  padding: 1rem 0 0.25rem;
+  padding: 16px 0 4px;
   flex: 1;
-  min-width: 10rem;
+  min-width: 160px;
 }
 .notification {
-  line-height: 2rem;
+  line-height: 32px;
 }
 header .notification i.web-notification-icon {
   color: var(--color-brand-prim) !important;
-  text-shadow: 0 0 2rem var(--color-brand-prim);
+  text-shadow: 0 0 32px var(--color-brand-prim);
 }
