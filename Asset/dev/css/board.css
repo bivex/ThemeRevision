@@ -25,6 +25,23 @@
 #board .board-add-icon {
 	line-height: 1.4;
 }
+
+/* Fix specific board elements with 0px line-height */
+#board th.board-column-header {
+	line-height: 1.4 !important;
+}
+
+#board .board-column-header-task-count {
+	line-height: 1.4 !important;
+}
+
+#board .board-column-title {
+	line-height: 1.4 !important;
+}
+
+#board .board-add-icon {
+	line-height: 1.4 !important;
+}
 #board td:first-child,
 #board th:first-child {
 	border: none;

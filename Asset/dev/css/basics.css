@@ -97,7 +97,17 @@ body {
 /* Ensure all input elements use the correct font family */
 body.TR input,
 body.TR textarea,
-body.TR select {
+body.TR select,
+body.TR input[type="text"],
+body.TR input[type="email"],
+body.TR input[type="password"],
+body.TR input[type="number"],
+body.TR input[type="date"],
+body.TR input[type="file"],
+body.TR input[type="checkbox"],
+body.TR input[type="radio"],
+body.TR .input-addon-field,
+body.TR .select-dropdown-input {
 	font-family: var(--style-fontfamily) !important;
 }
 
@@ -116,6 +126,74 @@ body.TR .tooltip {
 }
 
 body.TR .notification {
+	line-height: 1.4;
+}
+
+/* Fix specific elements with small line-height */
+body.TR .js-modal-medium,
+body.TR .js-modal-large {
+	line-height: 1.4;
+}
+
+body.TR .view-overview {
+	line-height: 1.4;
+}
+
+body.TR .dropdown-menu {
+	line-height: 1.4;
+}
+
+body.TR .dropdown-menu-link-icon {
+	line-height: 1.4;
+}
+
+body.TR .task-board-header {
+	line-height: 1.4;
+}
+
+body.TR .board-column-title {
+	line-height: 1.4;
+}
+
+body.TR .board-column-header-task-count {
+	line-height: 1.4;
+}
+
+body.TR .board-add-icon {
+	line-height: 1.4;
+}
+
+body.TR .task-tag {
+	line-height: 1.4;
+}
+
+body.TR .task-icon-age {
+	line-height: 1.4;
+}
+
+/* Fix elements with very small line-height values */
+body.TR .fa,
+body.TR i.fa {
+	line-height: 1.4;
+}
+
+body.TR .avatar-letter {
+	line-height: 1.4;
+}
+
+body.TR .views {
+	line-height: 1.4;
+}
+
+body.TR .dropdown {
+	line-height: 1.4;
+}
+
+body.TR .task-board-icons {
+	line-height: 1.4;
+}
+
+body.TR .task-board-icons .task-icon-age {
 	line-height: 1.4;
 }
 body.TR a {
