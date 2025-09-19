@@ -71,11 +71,12 @@
 #task-view .sidebar-content #task-summary {
   margin-bottom: 16px;
   max-width: unset;
-  background-image: var(--pattern-premium-def);
-  background-size: var(--pattern-premium-size);
+  background-image: var(--pattern-stunning-def);
+  background-size: var(--pattern-stunning-size);
   background-attachment: fixed;
   position: relative;
   overflow: hidden;
+  animation: gradientShift 25s ease-in-out infinite;
 }
 #task-summary > br {
   display: none;

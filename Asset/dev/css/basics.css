@@ -52,6 +52,23 @@
     linear-gradient(-45deg, rgba(0, 0, 255, 0.1) 25%, transparent 25%, transparent 75%, rgba(255, 255, 0, 0.1) 75%);
   --pattern-ultra-visible-size: 30px 30px;
 
+  /* Stunning premium gradient patterns */
+  --pattern-stunning-def: 
+    radial-gradient(circle at 20% 20%, rgba(138, 43, 226, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 20, 147, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 40% 60%, rgba(0, 191, 255, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 60% 40%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, transparent 25%, rgba(255, 255, 255, 0.05) 50%, transparent 75%, rgba(255, 255, 255, 0.08) 100%),
+    linear-gradient(45deg, rgba(138, 43, 226, 0.05) 0%, transparent 20%, rgba(255, 20, 147, 0.05) 40%, transparent 60%, rgba(0, 191, 255, 0.05) 80%, transparent 100%);
+  --pattern-stunning-ph: 
+    radial-gradient(circle at 20% 20%, rgba(138, 43, 226, 0.25) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 20, 147, 0.25) 0%, transparent 50%),
+    radial-gradient(circle at 40% 60%, rgba(0, 191, 255, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 60% 40%, rgba(255, 215, 0, 0.18) 0%, transparent 50%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, transparent 25%, rgba(255, 255, 255, 0.08) 50%, transparent 75%, rgba(255, 255, 255, 0.12) 100%),
+    linear-gradient(45deg, rgba(138, 43, 226, 0.08) 0%, transparent 20%, rgba(255, 20, 147, 0.08) 40%, transparent 60%, rgba(0, 191, 255, 0.08) 80%, transparent 100%);
+  --pattern-stunning-size: 300px 300px;
+
   /*default css override*/
   --color-dark: var(--color-greyscale-1);
   --color-primary: var(--color-greyscale-1);
