@@ -1,6 +1,7 @@
 .board-task-list {
   min-height: 500px;
-  /*background: linear-gradient(180deg, var(--color-greyscale-3), transparent 10%);*/
+  background-image: var(--pattern-dots-def);
+  background-size: var(--pattern-dots-size);
   border-radius: var(--size-radius-def);
   border-left: var(--style-border);
   box-shadow: inset -64px 0 0 0 var(--color-greyscale-4);

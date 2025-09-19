@@ -14,8 +14,8 @@
   --style-shadow-light: 0 1px 2px 0 var(--color-shadow-lit);
   --style-shadow-heavy: 0 3px 8px 0 var(--color-shadow-hev);
 
-  --pattern-dots-def: radial-gradient(circle, var(--color-greyscale-2) 1px, transparent 1px);
-  --pattern-dots-ph: radial-gradient(circle, var(--color-greyscale-3) 1px, transparent 1px);
+  --pattern-dots-def: repeating-linear-gradient(0deg, var(--color-greyscale-3) 0, var(--color-greyscale-3) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(90deg, var(--color-greyscale-3) 0, var(--color-greyscale-3) 1px, transparent 1px, transparent 12px);
+  --pattern-dots-ph: repeating-linear-gradient(0deg, var(--color-greyscale-4) 0, var(--color-greyscale-4) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(90deg, var(--color-greyscale-4) 0, var(--color-greyscale-4) 1px, transparent 1px, transparent 12px);
   --pattern-dots-size: 12px 12px;
 
   /*default css override*/
