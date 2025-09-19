@@ -99,7 +99,8 @@ header {
   text-shadow: 0 0 1em var(--color-greyscale-6);
   position: relative;
   overflow: hidden;
-  animation: gradientShift 30s ease-in-out infinite;
+  animation: gradientShift 90s ease-in-out infinite;
+  will-change: background-position;
 }
 .sidebar-content > h3 {
   background-image: none;

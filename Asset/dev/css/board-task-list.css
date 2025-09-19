@@ -7,7 +7,8 @@
   background-attachment: fixed;
   background-repeat: repeat;
   background-position: 0 0;
-  animation: gradientShift 20s ease-in-out infinite;
+  animation: gradientShift 60s ease-in-out infinite;
+  will-change: background-position;
   border-left: var(--style-border);
   box-shadow: inset -64px 0 0 0 var(--color-greyscale-4);
   position: relative;
@@ -44,7 +45,8 @@
   margin-bottom: 12px;
   position: relative;
   overflow: hidden;
-  animation: gradientShift 15s ease-in-out infinite;
+  animation: gradientShift 45s ease-in-out infinite;
+  will-change: background-position;
 }
 
 /*collapsed and expand*/
@@ -341,5 +343,21 @@ body.TR .table-list-category span.tooltip i.fa {
   }
   100% {
     background-position: 0% 0%;
+  }
+}
+
+/* Disable animation on low-end devices for better performance */
+@media (prefers-reduced-motion: reduce) {
+  .board-task-list,
+  .draggable-placeholder {
+    animation: none !important;
+  }
+}
+
+/* Disable animation on mobile devices */
+@media (max-width: 768px) {
+  .board-task-list,
+  .draggable-placeholder {
+    animation: none !important;
   }
 }

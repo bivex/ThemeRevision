@@ -76,7 +76,8 @@
   background-attachment: fixed;
   position: relative;
   overflow: hidden;
-  animation: gradientShift 25s ease-in-out infinite;
+  animation: gradientShift 80s ease-in-out infinite;
+  will-change: background-position;
 }
 #task-summary > br {
   display: none;
