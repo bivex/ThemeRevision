@@ -2,10 +2,13 @@
   min-height: 500px;
   /*background: linear-gradient(180deg, var(--color-greyscale-3), transparent 10%);*/
   border-radius: var(--size-radius-def);
-  background-image: var(--pattern-dots-def);
-  background-size: var(--pattern-dots-size);
+  background-image: var(--pattern-premium-def);
+  background-size: var(--pattern-premium-size);
+  background-attachment: fixed;
   border-left: var(--style-border);
   box-shadow: inset -64px 0 0 0 var(--color-greyscale-4);
+  position: relative;
+  overflow: hidden;
 }
 .board-task-list-compact {
   max-height: calc(100vh - 264px);
@@ -32,9 +35,12 @@
 }
 .draggable-placeholder {
   border: 24px solid var(--color-greyscale-5);
-  background-image: var(--pattern-dots-ph);
-  background-size: var(--pattern-dots-size);
+  background-image: var(--pattern-premium-ph);
+  background-size: var(--pattern-premium-size);
+  background-attachment: fixed;
   margin-bottom: 12px;
+  position: relative;
+  overflow: hidden;
 }
 
 /*collapsed and expand*/

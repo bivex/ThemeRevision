@@ -71,8 +71,11 @@
 #task-view .sidebar-content #task-summary {
   margin-bottom: 16px;
   max-width: unset;
-  background-image: var(--pattern-dots-def);
-  background-size: var(--pattern-dots-size);
+  background-image: var(--pattern-premium-def);
+  background-size: var(--pattern-premium-size);
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
 }
 #task-summary > br {
   display: none;

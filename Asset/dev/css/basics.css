@@ -24,6 +24,19 @@
   );
   --pattern-dots-size: 16px 16px;
 
+  /* Premium background patterns */
+  --pattern-premium-def: 
+    linear-gradient(135deg, transparent 0%, rgba(255,255,255,0.03) 25%, transparent 50%, rgba(255,255,255,0.03) 75%, transparent 100%),
+    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.05) 0%, transparent 50%);
+  --pattern-premium-ph: 
+    linear-gradient(135deg, transparent 0%, rgba(255,255,255,0.05) 25%, transparent 50%, rgba(255,255,255,0.05) 75%, transparent 100%),
+    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.08) 0%, transparent 50%);
+  --pattern-premium-size: 200px 200px;
+
   /*default css override*/
   --color-dark: var(--color-greyscale-1);
   --color-primary: var(--color-greyscale-1);
@@ -454,4 +467,51 @@ body.TR i.fa,
 body.TR i.fa.fa-exchange-alt,
 body.TR i.fa.fa-chevron-down.select-dropdown-chevron {
   font-size: 12px !important;
+}
+
+body.TR .dropdown-menu i.fa.fa-cog {
+  font-size: 12px !important;
+  line-height: 1 !important;
+  vertical-align: middle !important;
+}
+
+body.TR .dropdown .dropdown-menu.action-menu {
+  font-size: 12px !important;
+  line-height: 1 !important;
+  padding: 0 10px !important;
+}
+
+/* Apply specific dimensions to views-switcher-component list items */
+body.TR .views-switcher-component ul.views li {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important; /* Center content horizontally */
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+}
+
+body.TR .views-switcher-component ul.views li a {
+  display: flex !important;
+  align-items: center !important;
+  line-height: 1 !important; /* Устанавливаем line-height для выравнивания */
+  font-size: 12px !important; /* Устанавливаем font-size для текста ссылки */
+  height: auto !important; /* Allow height to be determined by content and padding */
+  width: auto !important; /* Allow width to be determined by content and padding */
+  padding: 0 10px !important; /* Add horizontal padding */
+  justify-content: center !important; /* Center content horizontally */
+}
+
+body.TR .views-switcher-component ul.views li a i.fa {
+  font-size: 12px !important; /* Устанавливаем font-size для иконки */
+  line-height: 1 !important; /* Устанавливаем line-height для иконки */
+  vertical-align: middle !important; /* Выравниваем иконку по центру */
+  margin-right: 8px !important; /* Добавляем отступ справа для иконки */
+}
+
+body.TR .views-switcher-component {
+  font-size: 12px !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+  /* Keep existing float: left; and margin-right: 0.5rem; if they are still needed */
 }

@@ -93,9 +93,12 @@ header {
   /*border-bottom: var(--style-border);*/
   padding: 16px 0;
   margin: 0 0 8px;
-  background-image: var(--pattern-dots-def);
-  background-size: var(--pattern-dots-size);
+  background-image: var(--pattern-premium-def);
+  background-size: var(--pattern-premium-size);
+  background-attachment: fixed;
   text-shadow: 0 0 1em var(--color-greyscale-6);
+  position: relative;
+  overflow: hidden;
 }
 .sidebar-content > h3 {
   background-image: none;
