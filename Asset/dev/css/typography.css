@@ -1,0 +1,300 @@
+/* Typography improvements with Inter font */
+
+/* Основные настройки типографики */
+body {
+    font-family: var(--style-fontfamily);
+    font-weight: 400;
+    font-size: 0.9375rem; /* Base size: 15px */
+    line-height: 1.6;
+    letter-spacing: var(--style-letterspacing); /* -0.01em */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Заголовки */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--style-fontfamily);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem; /* 40px */
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 2rem; /* 32px */
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+}
+
+h3 {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+h4 {
+    font-size: 1.25rem; /* 20px */
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.3;
+}
+
+h5 {
+    font-size: 1.125rem; /* 18px */
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.4;
+}
+
+h6 {
+    font-size: 1rem; /* 16px */
+    font-weight: 500;
+    letter-spacing: -0.005em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+/* Параграфы и основной текст */
+p {
+    font-size: 0.9375rem; /* 15px */
+    line-height: 1.6;
+    letter-spacing: var(--style-letterspacing);
+}
+
+/* Ссылки */
+a {
+    font-weight: 500;
+    letter-spacing: var(--style-letterspacing);
+}
+
+/* Кнопки */
+.btn, button {
+    font-weight: 500;
+    font-size: 0.9375rem; /* 15px */
+    letter-spacing: -0.01em;
+    text-transform: none;
+    line-height: 1.2;
+}
+
+/* Формы */
+input, textarea, select {
+    font-size: 0.9375rem; /* 15px */
+    line-height: 1.5;
+    letter-spacing: var(--style-letterspacing);
+}
+
+/* Таблицы */
+table {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.5;
+    letter-spacing: var(--style-letterspacing);
+}
+
+th {
+    font-weight: 600;
+    font-size: 0.875rem; /* 14px */
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+}
+
+/* Задачи на доске */
+.task-board-title a {
+    font-weight: 600;
+    font-size: 1rem; /* 16px */
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+}
+
+.task-board {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.5;
+    letter-spacing: var(--style-letterspacing);
+}
+
+/* Навигация */
+.page-header ul a, .menu-inline ul a {
+    font-weight: 500;
+    font-size: 0.9375rem; /* 15px */
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+}
+
+/* Модальные окна */
+#modal-content {
+    font-size: 0.9375rem; /* 15px */
+    line-height: 1.6;
+    letter-spacing: var(--style-letterspacing);
+}
+
+#modal-header {
+    font-weight: 600;
+    font-size: 1.25rem; /* 20px */
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+}
+
+/* Комментарии и активность */
+.comment-content, .activity-content {
+    font-size: 0.9375rem; /* 15px */
+    line-height: 1.6;
+    letter-spacing: var(--style-letterspacing);
+}
+
+.comment-title, .activity-title {
+    font-weight: 500;
+    font-size: 0.875rem; /* 14px */
+    letter-spacing: -0.01em;
+}
+
+/* Списки */
+ul, ol {
+    font-size: 0.9375rem; /* 15px */
+    line-height: 1.6;
+    letter-spacing: var(--style-letterspacing);
+}
+
+/* Мобильные улучшения */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.875rem; /* 14px */
+        line-height: 1.5;
+    }
+    
+    h1 {
+        font-size: 2rem; /* 32px */
+        line-height: 1.1;
+    }
+    
+    h2 {
+        font-size: 1.5rem; /* 24px */
+        line-height: 1.2;
+    }
+    
+    h3 {
+        font-size: 1.25rem; /* 20px */
+        line-height: 1.25;
+    }
+    
+    h4 {
+        font-size: 1.125rem; /* 18px */
+        line-height: 1.3;
+    }
+
+    h5 {
+        font-size: 1rem; /* 16px */
+        line-height: 1.4;
+    }
+
+    h6 {
+        font-size: 0.875rem; /* 14px */
+        line-height: 1.5;
+    }
+
+    p, a, .btn, button, input, textarea, select, #modal-content, .comment-content, .activity-content, ul, ol {
+        font-size: 0.875rem; /* 14px */
+        line-height: 1.5;
+    }
+
+    table {
+        font-size: 0.8125rem; /* 13px */
+    }
+
+    th {
+        font-size: 0.8125rem; /* 13px */
+    }
+    
+    .task-board-title a {
+        font-size: 0.9375rem; /* 15px */
+        line-height: 1.3;
+    }
+
+    .task-board {
+        font-size: 0.8125rem; /* 13px */
+    }
+
+    .page-header ul a, .menu-inline ul a {
+        font-size: 0.875rem; /* 14px */
+    }
+
+    #modal-header {
+        font-size: 1.125rem; /* 18px */
+    }
+
+    .comment-title, .activity-title {
+        font-size: 0.8125rem; /* 13px */
+    }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.8125rem; /* 13px */
+        line-height: 1.4;
+    }
+    
+    h1 {
+        font-size: 1.75rem; /* 28px */
+    }
+    
+    h2 {
+        font-size: 1.375rem; /* 22px */
+    }
+    
+    h3 {
+        font-size: 1.125rem; /* 18px */
+    }
+    
+    h4 {
+        font-size: 1rem; /* 16px */
+    }
+
+    h5 {
+        font-size: 0.9375rem; /* 15px */
+    }
+
+    h6 {
+        font-size: 0.875rem; /* 14px */
+    }
+
+    p, a, .btn, button, input, textarea, select, #modal-content, .comment-content, .activity-content, ul, ol {
+        font-size: 0.8125rem; /* 13px */
+        line-height: 1.4;
+    }
+
+    table {
+        font-size: 0.75rem; /* 12px */
+    }
+
+    th {
+        font-size: 0.75rem; /* 12px */
+    }
+    
+    .task-board-title a {
+        font-size: 0.8125rem; /* 13px */
+    }
+
+    .task-board {
+        font-size: 0.75rem; /* 12px */
+    }
+
+    .page-header ul a, .menu-inline ul a {
+        font-size: 0.8125rem; /* 13px */
+    }
+
+    #modal-header {
+        font-size: 1rem; /* 16px */
+    }
+
+    .comment-title, .activity-title {
+        font-size: 0.75rem; /* 12px */
+    }
+}

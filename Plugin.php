@@ -65,6 +65,12 @@ class Plugin extends Base
 
 		// main js
 		$this->hook->on('template:layout:js', array('template' => 'plugins/ThemeRevision/Asset/main.min.js'));
+		
+		// mobile fixes css
+		$this->hook->on('template:layout:css', array('template' => 'plugins/ThemeRevision/Asset/dev/css/mobile-fixes.css'));
+		
+		// typography css
+		$this->hook->on('template:layout:css', array('template' => 'plugins/ThemeRevision/Asset/dev/css/typography.css'));
 	}
 
 	public function onStartup(){

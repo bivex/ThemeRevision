@@ -7,11 +7,17 @@ header {
 }
 .page {
 	margin: 0;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
 }
 #main {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
 }
 .page > #main > p, .page > #main > .alert, .page > .filter-box, .page > .margin-bottom {
 	margin: 0 0 1rem;
@@ -31,7 +37,10 @@ header {
 }
 #board-container {
 	background: var(--color-greyscale-4);
-	overflow-x:inherit
+	overflow-x: auto;
+	max-width: 100%;
+	width: 100%;
+	-webkit-overflow-scrolling: touch;
 }
 .sidebar-container{
 	/*max-width: calc(var(--size-width-def) + var(--size-width-comp) + 4rem);*/
