@@ -27,7 +27,10 @@ class Plugin extends Base
 		$this->template->hook->attach('template:config:sidebar', 'ThemeRevision:settings/sidebar');
 
 		// set CSP
-		$this->setContentSecurityPolicy(array('style-src' => '\'self\' \'unsafe-inline\' fonts.googleapis.com'));
+		$this->setContentSecurityPolicy(array(
+			'style-src' => '\'self\' \'unsafe-inline\' fonts.googleapis.com',
+			'font-src' => '*'
+		));
 
 		// load configs
 		global $themeRevisionConfig;
@@ -48,6 +51,11 @@ class Plugin extends Base
 		if (!empty($themeRevisionConfig['corner_radius'])){
 			$this->template->hook->attach('template:layout:head', 'ThemeRevision:layout/head_corner_radius', array('radius' => $themeRevisionConfig['corner_radius']));
 		}
+
+		// Add TR class to body (ensure it's always present)
+		$this->hook->on('template:layout:body:start', function() {
+			$this->response->css->addHtml('<script>document.body.classList.add("TR");</script>');
+		});
 
 		// icons replacement
 		if (!isset($themeRevisionConfig['enable_google_material_icons']) || $themeRevisionConfig['enable_google_material_icons']) {
