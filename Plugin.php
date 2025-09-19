@@ -74,6 +74,9 @@ class Plugin extends Base
 		// main js
 		$this->hook->on('template:layout:js', array('template' => 'plugins/ThemeRevision/Asset/main.min.js'));
 		$this->hook->on('template:layout:js', array('template' => 'plugins/ThemeRevision/Asset/dev/js/zenscroll.min.js'));
+
+		// Trianglify Background Patterns
+		$this->hook->on('template:layout:js', array('template' => 'plugins/ThemeRevision/Asset/trianglify-init.js'));
 		
 		// mobile fixes css
 		//$this->hook->on('template:layout:css', array('template' => 'plugins/ThemeRevision/Asset/dev/css/mobile-fixes.css'));

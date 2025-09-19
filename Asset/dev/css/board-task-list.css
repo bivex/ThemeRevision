@@ -1,6 +1,5 @@
 .board-task-list {
   min-height: 500px;
-  /*background: linear-gradient(180deg, var(--color-greyscale-3), transparent 10%);*/
   border-radius: var(--size-radius-def);
   /* Background will be set by Trianglify.js */
   background-color: var(--color-greyscale-4);
