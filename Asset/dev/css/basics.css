@@ -87,6 +87,10 @@
   --button-disabled-background-color: var(--color-greyscale-3);
   --button-disabled-border-color: var(--color-greyscale-3);
 }
+html,
+body {
+  scroll-behavior: smooth;
+}
 html {
   color-scheme: light;
 }

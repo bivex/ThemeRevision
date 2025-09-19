@@ -1,3 +1,6 @@
+// Zenscroll setup for smooth scrolling UX
+zenscroll.setup(600, 80);
+
 (function(window, document, KB, $, hljs){
     // Adding logo through js if php templates have been overridden by other plugins
     if (!document.body.classList.contains("TR")){
