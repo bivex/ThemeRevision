@@ -94,6 +94,23 @@ body {
 	letter-spacing: var(--style-letterspacing);
 }
 
+/* Ensure consistent font-family for all elements within ThemeRevision */
+body.TR * {
+    font-family: var(--style-fontfamily) !important;
+}
+
+/* Allow FontAwesome and Material Symbols to use their specific fonts */
+body.TR .fa,
+body.TR i.fa,
+body.TR .material-symbols-sharp {
+    font-family: inherit !important; /* Inherit from FontAwesome/Material Symbols */
+}
+
+/* Ensure consistent line-height for all elements within ThemeRevision */
+body.TR *:not(.fa):not(i.fa):not(.material-symbols-sharp) {
+    line-height: 1.4 !important;
+}
+
 /* Ensure all input elements use the correct font family */
 body.TR input,
 body.TR textarea,
