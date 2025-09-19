@@ -1,10 +1,10 @@
 .board-task-list {
   min-height: 500px;
-  background-image: var(--pattern-dots-def);
-  background-size: var(--pattern-dots-size);
+  /*background: linear-gradient(180deg, var(--color-greyscale-3), transparent 10%);*/
   border-radius: var(--size-radius-def);
   border-left: var(--style-border);
-  box-shadow: inset -64px 0 0 0 var(--color-greyscale-4);
+  /*box-shadow: inset -64px 0 0 0 var(--color-greyscale-4);*/
+  background: transparent;
 }
 .board-task-list-compact {
   max-height: calc(100vh - 264px);
@@ -21,6 +21,7 @@
   font-size: 12px;
   margin-bottom: 8px;
   box-shadow: var(--style-shadow-light);
+  background-color: var(--color-greyscale-6);
 }
 .task-board:hover {
   transform: translateY(-2px);

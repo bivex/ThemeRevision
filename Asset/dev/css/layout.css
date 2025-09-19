@@ -45,6 +45,8 @@ header {
   max-width: 100%;
   width: 100%;
   -webkit-overflow-scrolling: touch;
+  /*background-attachment: fixed;*/
+  /*background-position: 0 0;*/
 }
 .sidebar-container {
   /*max-width: calc(var(--size-width-def) + var(--size-width-comp) + 4rem);*/
