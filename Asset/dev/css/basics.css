@@ -5,7 +5,7 @@
 	--size-width-comp: 220px;
 	--size-radius-def: 4px;
 
-	--style-fontfamily: "Inter", "SF Pro Display", Calibri, Helvetica, Verdana, Arial, sans-serif;
+	--style-fontfamily: "Inter";
 	--style-fontfamily-code: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	--style-letterspacing: -0.01em;
 	--style-border: 1px solid var(--color-greyscale-3);

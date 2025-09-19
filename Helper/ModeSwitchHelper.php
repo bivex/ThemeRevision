@@ -26,6 +26,8 @@ class ModeSwitchHelper extends BaseHelper
         '/Asset/dev/css/modal.css',
         '/Asset/dev/css/markdown.css',
         '/Asset/dev/css/other.css',
+        '/Asset/dev/css/mobile-fixes.css',
+        '/Asset/dev/css/typography.css',
         '/Asset/dev/css/break-points.css'
     );
 
