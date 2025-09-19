@@ -41,10 +41,16 @@
 
   /* Alternative more visible premium pattern for testing */
   --pattern-premium-visible: 
-    linear-gradient(45deg, rgba(120, 119, 198, 0.1) 25%, transparent 25%, transparent 75%, rgba(120, 119, 198, 0.1) 75%),
-    linear-gradient(-45deg, rgba(255, 119, 198, 0.1) 25%, transparent 25%, transparent 75%, rgba(255, 119, 198, 0.1) 75%),
-    radial-gradient(circle at 50% 50%, rgba(120, 219, 255, 0.05) 0%, transparent 70%);
-  --pattern-premium-visible-size: 60px 60px;
+    linear-gradient(45deg, rgba(120, 119, 198, 0.2) 25%, transparent 25%, transparent 75%, rgba(120, 119, 198, 0.2) 75%),
+    linear-gradient(-45deg, rgba(255, 119, 198, 0.2) 25%, transparent 25%, transparent 75%, rgba(255, 119, 198, 0.2) 75%),
+    radial-gradient(circle at 50% 50%, rgba(120, 219, 255, 0.1) 0%, transparent 70%);
+  --pattern-premium-visible-size: 40px 40px;
+
+  /* Ultra visible pattern for debugging */
+  --pattern-ultra-visible: 
+    linear-gradient(45deg, rgba(255, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 255, 0, 0.1) 75%),
+    linear-gradient(-45deg, rgba(0, 0, 255, 0.1) 25%, transparent 25%, transparent 75%, rgba(255, 255, 0, 0.1) 75%);
+  --pattern-ultra-visible-size: 30px 30px;
 
   /*default css override*/
   --color-dark: var(--color-greyscale-1);

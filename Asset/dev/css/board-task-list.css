@@ -2,8 +2,8 @@
   min-height: 500px;
   /*background: linear-gradient(180deg, var(--color-greyscale-3), transparent 10%);*/
   border-radius: var(--size-radius-def);
-  background-image: var(--pattern-premium-visible);
-  background-size: var(--pattern-premium-visible-size);
+  background-image: var(--pattern-ultra-visible);
+  background-size: var(--pattern-ultra-visible-size);
   background-attachment: fixed;
   background-repeat: repeat;
   background-position: 0 0;
