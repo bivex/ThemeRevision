@@ -1,7 +1,15 @@
-.project-header .dropdown-component,
-.project-header .views-switcher-component {
-  margin: 0 0.5rem 1rem 0;
+.project-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
+
+.project-header .dropdown-component,
+.project-header .views-switcher-component,
+.project-header .input-addon {
+  margin: 0 0.5rem 0.5rem 0; /* Adjust margin for spacing and alignment */
+}
+
 .project-header .filter-box-component {
   margin: 0 0 1rem 0;
 }
@@ -14,7 +22,7 @@
 .menu-inline ul,
 .views-switcher-component .views,
 .project-header > .dropdown-component,
-.filter-box .input-addon,
+.project-header .input-addon,
 .fc-state-default,
 .fc button {
   background: var(--color-greyscale-6);
@@ -49,7 +57,7 @@
 .views-switcher-component .views {
   margin: 0 1rem 0 0;
   font-size: 1rem;
-  border-radius: 0 var(--size-radius-def) var(--size-radius-def) 0;
+  border-radius: var(--size-radius-def);
 }
 .project-header > .dropdown-component {
   padding: 0 0 0 1rem;
@@ -60,8 +68,8 @@
 .views-switcher-component .views li,
 .page-header li,
 .menu-inline li,
-.filter-box .input-addon .input-addon-item,
-.filter-box .input-addon input[type="text"] {
+.project-header .input-addon .input-addon-item,
+.project-header .input-addon input[type="text"] {
   line-height: 1rem;
   margin: 0;
 }
@@ -88,11 +96,16 @@
   font-weight: bold;
 }
 .views-switcher-component .views li,
-.filter-box .input-addon .input-addon-item,
-.filter-box .input-addon input[type="text"] {
+.project-header .input-addon .input-addon-item {
   padding: 0.75rem;
   background: var(--color-greyscale-6);
-  border: 0;
+  border: 1px solid var(--color-greyscale-4);
+  border-left: 0;
+}
+.project-header .input-addon input[type="text"] {
+  padding: 0.75rem;
+  background: var(--color-greyscale-6);
+  border: 1px solid var(--color-greyscale-4);
 }
 .views-switcher-component .views li {
   display: inline-block;
@@ -103,14 +116,13 @@
 .views-switcher-component .views li:first-child {
   border-top-left-radius: var(--size-radius-def);
   border-bottom-left-radius: var(--size-radius-def);
-  border-left: 1px solid var(--color-greyscale-6);
+  border-left: 1px solid var(--color-greyscale-4);
   border-radius: 0;
 }
 .views-switcher-component .views li:last-child {
   border-top-right-radius: var(--size-radius-def);
   border-bottom-right-radius: var(--size-radius-def);
-  border-color: var(--color-greyscale-6);
-  border-bottom-color: var(--color-greyscale-3);
+  border-color: var(--color-greyscale-4);
 }
 .views-switcher-component .views li.active {
   background: linear-gradient(
@@ -135,18 +147,25 @@
   color: var(--color-greyscale-1);
   font-weight: normal;
 }
-.project-header .filter-box-component .input-addon {
+.project-header .input-addon {
   border-radius: var(--size-radius-def);
+  display: flex; /* Make input-addon a flex container */
+  border: 1px solid var(--color-greyscale-4);
 }
-.filter-box .input-addon input[type="text"] {
+.project-header .input-addon input[type="text"] {
   font-size: 1rem;
   height: 1rem;
   box-shadow: none;
-  border-radius: var(--size-radius-def), 0, 0, var(--size-radius-def);
+  border-radius: var(--size-radius-def) 0 0 var(--size-radius-def);
   box-sizing: content-box;
   background: none;
+  border: 0; /* Remove individual border as parent has it */
 }
-.filter-box .input-addon .input-addon-item:last-child {
+.project-header .input-addon .input-addon-item {
+  border-left: 1px solid var(--color-greyscale-4); /* Add left border to items */
+  border-radius: 0;
+}
+.project-header .input-addon .input-addon-item:last-child {
   border-radius: 0 var(--size-radius-def) var(--size-radius-def) 0;
 }
 .dropdown .action-menu {
@@ -155,8 +174,8 @@
   /*font-size: 0;*/
   box-sizing: border-box;
 }
-.filter-box .input-addon .input-addon-item .dropdown-menu,
-.filter-box .input-addon .input-addon-item .active-dropdown-menu {
+.project-header .input-addon .input-addon-item .dropdown-menu,
+.project-header .input-addon .input-addon-item .active-dropdown-menu {
   line-height: 1rem;
   display: block;
 }
