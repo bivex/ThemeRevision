@@ -35,9 +35,7 @@ zenscroll.setup(600, 80);
             if ($){
                 $dropdownMenu = $("#dropdown > ul.dropdown-submenu-open");
                 // fix a bug that displays ghost spacing, compatible with firefox
-                $dropdownMenu.children("li:not(.no-hover)").has("i.fa").css({
-                    fontSize: 0
-                });
+                $dropdownMenu.children("li:not(.no-hover)").has("i.fa").addClass("font-size-0");
                 // add search box to dropdown menu
                 if (checkListSize($dropdownMenu)){
                     $dropdownMenu.prepend('<li id="dropdown-search"><input tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="textbox"></li>');

@@ -128,6 +128,11 @@ body.TR .material-symbols-sharp {
   font-family: "Material Symbols Sharp" !important;
 }
 
+/* Hide Text */
+.font-size-0 {
+  font-size: 0 !important;
+}
+
 /* Ensure consistent line-height for all elements within ThemeRevision */
 body.TR *:not(.fa):not(i.fa):not(.material-symbols-sharp) {
   line-height: 1.4 !important;
