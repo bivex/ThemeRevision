@@ -16,6 +16,9 @@ header h1 .logo {
 	line-height: 1.4 !important;
 	width: 3rem;
 }
+header h1 .logo span.logo {
+	line-height: 1.4 !important;
+}
 header h1 .logo a {
 	font-size: 1rem !important;
 	line-height: 1.4 !important;
