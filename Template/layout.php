@@ -87,9 +87,9 @@
             
             // Simple gradient configurations
             const gradients = {
-                boardTaskList: 'linear-gradient(135deg, rgba(138, 43, 226, 0.1) 0%, rgba(255, 20, 147, 0.1) 25%, rgba(0, 191, 255, 0.1) 50%, rgba(255, 215, 0, 0.1) 75%, rgba(138, 43, 226, 0.1) 100%)',
-                taskSummary: 'linear-gradient(135deg, rgba(138, 43, 226, 0.08) 0%, rgba(255, 20, 147, 0.08) 50%, rgba(0, 191, 255, 0.08) 100%)',
-                pageHeader: 'linear-gradient(135deg, rgba(138, 43, 226, 0.06) 0%, rgba(255, 20, 147, 0.06) 50%, rgba(0, 191, 255, 0.06) 100%)'
+                boardTaskList: 'linear-gradient(135deg, rgba(138, 43, 226, 0.08) 0%, rgba(255, 20, 147, 0.08) 50%, rgba(0, 191, 255, 0.08) 100%)',
+                taskSummary: 'linear-gradient(135deg, rgba(138, 43, 226, 0.06) 0%, rgba(255, 20, 147, 0.06) 50%, rgba(0, 191, 255, 0.06) 100%)',
+                pageHeader: 'linear-gradient(135deg, rgba(138, 43, 226, 0.04) 0%, rgba(255, 20, 147, 0.04) 50%, rgba(0, 191, 255, 0.04) 100%)'
             };
             
             // Apply gradient backgrounds
@@ -101,7 +101,7 @@
                         boardTaskList.style.backgroundImage = gradients.boardTaskList;
                         boardTaskList.style.backgroundSize = '200% 200%';
                         boardTaskList.style.backgroundPosition = '0% 0%';
-                        boardTaskList.style.animation = 'gradientShift 30s ease infinite';
+                        boardTaskList.style.animation = 'gradientShift 90s ease infinite';
                     }
                 });
                 
@@ -112,7 +112,7 @@
                         taskSummary.style.backgroundImage = gradients.taskSummary;
                         taskSummary.style.backgroundSize = '200% 200%';
                         taskSummary.style.backgroundPosition = '0% 0%';
-                        taskSummary.style.animation = 'gradientShift 40s ease infinite';
+                        taskSummary.style.animation = 'gradientShift 120s ease infinite';
                     }
                 });
                 
@@ -123,7 +123,7 @@
                         header.style.backgroundImage = gradients.pageHeader;
                         header.style.backgroundSize = '200% 200%';
                         header.style.backgroundPosition = '0% 0%';
-                        header.style.animation = 'gradientShift 50s ease infinite';
+                        header.style.animation = 'gradientShift 150s ease infinite';
                     }
                 });
             }
@@ -134,10 +134,11 @@
                 style.textContent = `
                     @keyframes gradientShift {
                         0% { background-position: 0% 0%; }
-                        25% { background-position: 100% 0%; }
-                        50% { background-position: 100% 100%; }
-                        75% { background-position: 0% 100%; }
-                        100% { background-position: 0% 0%; }
+                        100% { background-position: 100% 100%; }
+                    }
+                    
+                    .board-task-list, #task-summary, .page-header, .sidebar-content > h2, .sidebar-content > h3, .accordion-title {
+                        will-change: background-position;
                     }
                     
                     @media (prefers-reduced-motion: reduce) {
