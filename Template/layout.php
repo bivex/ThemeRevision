@@ -76,8 +76,6 @@
         </section>
         <?= $this->hook->render('template:layout:bottom') ?>
         
-        <!-- Trianglify Background Patterns (initialized in main.js) -->
-        <script src="https://cdn.jsdelivr.net/npm/trianglify@4.1.1/dist/trianglify.min.js"></script>
         <!-- Animated Gradient Backgrounds -->
         <script>
         /**
