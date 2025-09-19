@@ -12,6 +12,19 @@
 	line-height: 1.2;
 	padding-bottom: 0.25rem;
 }
+
+/* Improve line-height for board elements */
+#board .board-column-header-task-count {
+	line-height: 1.4;
+}
+
+#board .board-column-title {
+	line-height: 1.4;
+}
+
+#board .board-add-icon {
+	line-height: 1.4;
+}
 #board td:first-child,
 #board th:first-child {
 	border: none;

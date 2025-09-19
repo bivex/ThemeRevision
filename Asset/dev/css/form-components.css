@@ -84,7 +84,7 @@ input::placeholder, textarea::placeholder{
     border-radius: 0 0 var(--size-radius-def) var(--size-radius-def);
 }
 .text-editor-write-mode{
-	line-height: 0;
+	line-height: 1.4;
 }
 .js-text-editor-rendered {
     width: unset;
