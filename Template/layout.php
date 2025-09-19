@@ -75,6 +75,10 @@
             <?= $content_for_layout ?>
         </section>
         <?= $this->hook->render('template:layout:bottom') ?>
+        
+        <!-- Trianglify Background Patterns -->
+        <script src="<?= $this->url->href('PluginFileController', 'file', array('pluginId' => 'ThemeRevision', 'name' => 'trianglify.min.js')) ?>"></script>
+        <script src="<?= $this->url->href('PluginFileController', 'file', array('pluginId' => 'ThemeRevision', 'name' => 'trianglify-init.js')) ?>"></script>
     <?php endif ?>
     </body>
 </html>

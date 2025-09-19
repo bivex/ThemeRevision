@@ -93,14 +93,11 @@ header {
   /*border-bottom: var(--style-border);*/
   padding: 16px 0;
   margin: 0 0 8px;
-  background-image: var(--pattern-stunning-def);
-  background-size: var(--pattern-stunning-size);
-  background-attachment: fixed;
+  /* Background will be set by Trianglify.js */
+  background-color: var(--color-greyscale-4);
   text-shadow: 0 0 1em var(--color-greyscale-6);
   position: relative;
   overflow: hidden;
-  animation: gradientShift 90s ease-in-out infinite;
-  will-change: background-position;
 }
 .sidebar-content > h3 {
   background-image: none;

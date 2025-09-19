@@ -2,13 +2,8 @@
   min-height: 500px;
   /*background: linear-gradient(180deg, var(--color-greyscale-3), transparent 10%);*/
   border-radius: var(--size-radius-def);
-  background-image: var(--pattern-stunning-def);
-  background-size: var(--pattern-stunning-size);
-  background-attachment: fixed;
-  background-repeat: repeat;
-  background-position: 0 0;
-  animation: gradientShift 60s ease-in-out infinite;
-  will-change: background-position;
+  /* Background will be set by Trianglify.js */
+  background-color: var(--color-greyscale-4);
   border-left: var(--style-border);
   box-shadow: inset -64px 0 0 0 var(--color-greyscale-4);
   position: relative;
@@ -39,14 +34,11 @@
 }
 .draggable-placeholder {
   border: 24px solid var(--color-greyscale-5);
-  background-image: var(--pattern-stunning-ph);
-  background-size: var(--pattern-stunning-size);
-  background-attachment: fixed;
+  /* Background will be set by Trianglify.js */
+  background-color: var(--color-greyscale-5);
   margin-bottom: 12px;
   position: relative;
   overflow: hidden;
-  animation: gradientShift 45s ease-in-out infinite;
-  will-change: background-position;
 }
 
 /*collapsed and expand*/
@@ -327,37 +319,4 @@ body.TR .table-list-category span.tooltip i.fa {
   margin: 0;
 }
 
-/* Stunning gradient animation */
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 0%;
-  }
-  25% {
-    background-position: 100% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  75% {
-    background-position: 0% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-
-/* Disable animation on low-end devices for better performance */
-@media (prefers-reduced-motion: reduce) {
-  .board-task-list,
-  .draggable-placeholder {
-    animation: none !important;
-  }
-}
-
-/* Disable animation on mobile devices */
-@media (max-width: 768px) {
-  .board-task-list,
-  .draggable-placeholder {
-    animation: none !important;
-  }
-}
+/* Trianglify patterns are handled by JavaScript for better performance */

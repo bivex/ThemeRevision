@@ -71,13 +71,10 @@
 #task-view .sidebar-content #task-summary {
   margin-bottom: 16px;
   max-width: unset;
-  background-image: var(--pattern-stunning-def);
-  background-size: var(--pattern-stunning-size);
-  background-attachment: fixed;
+  /* Background will be set by Trianglify.js */
+  background-color: var(--color-greyscale-4);
   position: relative;
   overflow: hidden;
-  animation: gradientShift 80s ease-in-out infinite;
-  will-change: background-position;
 }
 #task-summary > br {
   display: none;
