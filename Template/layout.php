@@ -95,27 +95,31 @@
             // Apply gradient backgrounds
             function applyGradients() {
                 // Board task list
-                const boardTaskList = document.querySelector('.board-task-list');
-                if (boardTaskList) {
-                    boardTaskList.style.backgroundImage = gradients.boardTaskList;
-                    boardTaskList.style.backgroundSize = '200% 200%';
-                    boardTaskList.style.backgroundPosition = '0% 0%';
-                    boardTaskList.style.animation = 'gradientShift 30s ease infinite';
-                }
+                const boardTaskLists = document.querySelectorAll('.board-task-list');
+                boardTaskLists.forEach(boardTaskList => {
+                    if (boardTaskList) {
+                        boardTaskList.style.backgroundImage = gradients.boardTaskList;
+                        boardTaskList.style.backgroundSize = '200% 200%';
+                        boardTaskList.style.backgroundPosition = '0% 0%';
+                        boardTaskList.style.animation = 'gradientShift 30s ease infinite';
+                    }
+                });
                 
                 // Task summary
-                const taskSummary = document.querySelector('#task-summary');
-                if (taskSummary) {
-                    taskSummary.style.backgroundImage = gradients.taskSummary;
-                    taskSummary.style.backgroundSize = '200% 200%';
-                    taskSummary.style.backgroundPosition = '0% 0%';
-                    taskSummary.style.animation = 'gradientShift 40s ease infinite';
-                }
+                const taskSummaries = document.querySelectorAll('#task-summary');
+                taskSummaries.forEach(taskSummary => {
+                    if (taskSummary) {
+                        taskSummary.style.backgroundImage = gradients.taskSummary;
+                        taskSummary.style.backgroundSize = '200% 200%';
+                        taskSummary.style.backgroundPosition = '0% 0%';
+                        taskSummary.style.animation = 'gradientShift 40s ease infinite';
+                    }
+                });
                 
                 // Page headers
                 const pageHeaders = document.querySelectorAll('.page-header, .sidebar-content > h2, .sidebar-content > h3, .accordion-title');
                 pageHeaders.forEach(header => {
-                    if (header && !header.style.backgroundImage) {
+                    if (header) {
                         header.style.backgroundImage = gradients.pageHeader;
                         header.style.backgroundSize = '200% 200%';
                         header.style.backgroundPosition = '0% 0%';
