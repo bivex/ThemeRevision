@@ -39,8 +39,8 @@ header {
   height: 40px;
 }
 #board-container {
-  background-image: var(--pattern-dots-def);
-  background-size: var(--pattern-dots-size);
+  background-image: var(--pattern-stripes-def);
+  background-size: var(--pattern-stripes-size);
   overflow-x: auto;
   max-width: 100%;
   width: 100%;
