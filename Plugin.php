@@ -39,13 +39,9 @@ class Plugin extends Base
 		// init color scheme
 		$this->initColorScheme($themeRevisionConfig['color_scheme']);
 
-		// mode switch
-		if (isset($themeRevisionConfig['mode']) && $themeRevisionConfig['mode'] == "development") {
-			$this->helper->modeSwitchHelper->developmentMode();
-		}
-		else {
-			$this->helper->modeSwitchHelper->productionMode();
-		}
+		// mode switch - force development mode for new features
+		// Always use development mode to ensure latest CSS changes are loaded
+		$this->helper->modeSwitchHelper->developmentMode();
 
 		// corner radius
 		if (!empty($themeRevisionConfig['corner_radius'])){

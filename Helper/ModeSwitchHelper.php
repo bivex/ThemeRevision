@@ -45,9 +45,12 @@ class ModeSwitchHelper extends BaseHelper
     public function developmentMode(){
         $prdCSSFile = $this->getPluginPath().$this->prdCSSFile;
 
+        // Always remove production CSS file to ensure development mode
         if(file_exists($prdCSSFile)){
             unlink($prdCSSFile);
         }
+        
+        // Load individual development CSS files
         foreach ($this->devCSSFiles as $value)
         {
             $this->getPlugin()->hook->on('template:layout:css', array('template' => 'plugins/ThemeRevision'.$value));
